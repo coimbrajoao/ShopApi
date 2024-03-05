@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "krdtEcCQkLXh4EZyO+d51Q59Es1qVo4eMGelJmgTiU4m4HV19No1LL/+F/CMOFpitrI3qbYP/VyI6f9OOmq58A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\coimb\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\coimb\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
