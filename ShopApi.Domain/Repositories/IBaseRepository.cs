@@ -2,16 +2,13 @@ using ShopApi.Domain.Entities;
 
 namespace ShopApi.Domain.Repositories
 {
-    public interface IBaseRepository<TEntity> : IDisposable where TEntity : class
+    public interface IBaseRepository<T> where T : Entity
     {
-        Task Adicionar(TEntity entity);
-        Task AdicionarLista(IEnumerable<TEntity> entities);
-        Task<TEntity> ObterPorId(Guid id );
-        Task<List<TEntity>> ObterTodos();
-        void Atualizar(TEntity entity);
-        void AtualizarLista(IEnumerable<TEntity> entities);
-        void Remover(TEntity entity);
-        void RemoverLista(IEnumerable<TEntity> entities);
-        Task Commit();
+        void Create(T entity);
+        void Update(T entity);
+        Task<T> GetById(Guid id,string name);
+        Task<IEnumerable<T>> GetAll(string name);
+        void Delete(T entity);
+                
     }
 }

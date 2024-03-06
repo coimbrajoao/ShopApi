@@ -28,16 +28,13 @@ namespace ShopApi.Domain.Handlers
             }
             // Criar o usuário
             var usuario = new Usuario(command.Login, command.Senha);
-            _usuarioRepository.Adicionar(usuario);
+            _usuarioRepository.Create(usuario);
 
             // Gerar o cliente
             var Cliente = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento, usuario);
 
             // Salvar o cliente
-            _repository.Adicionar(Cliente);
-
-            _repository.Commit();
-            _usuarioRepository.Commit();
+            _repository.Create(Cliente);
 
             // Retornar o resultado
             return new GenericCommandResult(true, "Cliente salvo com sucesso", command);
@@ -50,19 +47,16 @@ namespace ShopApi.Domain.Handlers
                 return new GenericCommandResult(false, "Ops, parece que sua requisição está errada", command.Notifications);
             }
 
-            var cliente = _repository.ObterPorId(command.Id);
+            var cliente = _repository.GetById(command.Id, command.Nome);
             // Criar o usuário
             var usuario = new Usuario(command.Login, command.Senha);
-            _usuarioRepository.Atualizar(usuario);
+            _usuarioRepository.Update(usuario);
 
             // Gerar o cliente
             var Cliente = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento, usuario);
 
             // Salvar o cliente
-            _repository.Atualizar(Cliente);
-
-            _repository.Commit();
-            _usuarioRepository.Commit();
+            _repository.Update(Cliente);
 
             // Retornar o resultado
             return new GenericCommandResult(true, "Cliente atualizado com sucesso", command);

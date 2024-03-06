@@ -1,48 +1,45 @@
 using Microsoft.EntityFrameworkCore;
+using ShopApi.Domain.Entities;
 using ShopApi.Domain.Infra.Context;
 using ShopApi.Domain.Repositories;
 
 namespace ShopApi.Domain.Infra.Repositories
 {
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<T> : IBaseRepository<T> where T : Entity
     {
-        protected readonly DataContext _databaseContext;
-
-        public BaseRepository(DataContext databaseContext)
+        private readonly DataContext _context;
+        
+        public BaseRepository(DataContext context)
         {
-            _databaseContext = databaseContext;
+            _context = context;
+        }
+        public void Create(T entity)
+        {
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
         }
 
-        public async Task Adicionar(TEntity entity) =>
-            await _databaseContext.Set<TEntity>().AddAsync(entity);
+        public void Delete(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
+        }
 
-        public async Task AdicionarLista(IEnumerable<TEntity> entities) =>
-            await _databaseContext.Set<TEntity>().AddRangeAsync(entities);
 
-        public void Atualizar(TEntity entity) =>
-            _databaseContext.Set<TEntity>().Update(entity);
+        public void Update(T entity)
+        {
+            _context.Entry(entity).State = EntityState.Modified;
+            _context.SaveChanges();
+        }
+        public virtual Task<IEnumerable<T>> GetAll(string name)
+        {
+           throw new NotImplementedException();
+        }
 
-        public void AtualizarLista(IEnumerable<TEntity> entities) =>
-            _databaseContext.Set<TEntity>().UpdateRange(entities);
+        public virtual Task<T> GetById(Guid id, string name)
+        {
+            throw new NotImplementedException();
+        }
 
-        public async Task<TEntity> ObterPorId(Guid id ) =>
-            await _databaseContext.Set<TEntity>().FindAsync(id);
-        public async Task<List<TEntity>> ObterTodos() =>
-            await _databaseContext.Set<TEntity>().ToListAsync();
-
-        public void Remover(TEntity entity) =>
-            _databaseContext.Remove(entity);
-
-        public void RemoverLista(IEnumerable<TEntity> entities) =>
-            _databaseContext.RemoveRange(entities);
-
-        public async Task Commit() =>
-            await _databaseContext.SaveChangesAsync();
-
-        public void Dispose() =>
-            _databaseContext.Dispose();
     }
-
-
-
 }
