@@ -9,22 +9,48 @@ namespace ShopApi.Domain.Test.CommandTests.ClienteTests
     {
 
         [TestMethod]
-        public void Comando_invalido_nao_cria_cliente()
+        public void Should_not_create_client_with_invalid_command()
         {
-            var usuario = new Usuario("cliente", "");
-            var command = new ClienteCreateCommand("", "", "", "", DateTime.Now, usuario.Login, usuario.Senha);
+            // Cenário: comando de criação de cliente inválido
+            var command = new ClienteCreateCommand("", "", "", "", DateTime.Now, "", "", Enums.ETipoAcesso.Cliente);
+
+            // Ação: validação do comando
             command.Validate();
-            Assert.AreEqual(command.IsValid, false);
+
+            // Assertiva: o comando não deve ser válido
+            Assert.IsFalse(command.IsValid);
         }
 
         [TestMethod]
-        public void Comando_Valido_cria_cliente()
+        public void Should_create_valid_client()
         {
-            var usuario = new Usuario("cliente", "123456");
-            var command = new ClienteCreateCommand("Cliente", "cliente@gmail.com", "999999999", "12345678901", DateTime.Now, usuario.Login, usuario.Senha);
+            // Cenário: comando de criação de cliente válido
+            var clientName = "Cliente";
+            var clientEmail = "cliente@gmail.com";
+            var clientPhone = "999999999";
+            var clientCpf = "12345678901";
+            var clientTypeAccess = Enums.ETipoAcesso.Cliente;
+
+            var userName = clientName;
+            var userPassword = "123456";
+
+            var command = new ClienteCreateCommand(
+                clientName,
+                clientEmail,
+                clientPhone,
+                clientCpf,
+                DateTime.Parse("01/01/2000"), // Data de nascimento válida
+                userName,
+                userPassword,
+                clientTypeAccess);
+
+            // Ação: validação do comando
             command.Validate();
-            Assert.AreEqual(command.IsValid, true);
+
+            // Assertiva: o comando deve ser válido
+            Assert.IsTrue(command.IsValid);
         }
+
 
     }
 }

@@ -18,7 +18,7 @@ namespace ShopApi.Domain.Infra.Repositories
             return _context.Clientes.Where(x => x.Nome.Contains(name)).ToList();
         }
 
-        public override async Task<Cliente> GetById(Guid id, string name)
+        public override Cliente GetById(Guid id, string name)
         {
             return _context.Clientes.FirstOrDefault(x => x.Id == id);
         }

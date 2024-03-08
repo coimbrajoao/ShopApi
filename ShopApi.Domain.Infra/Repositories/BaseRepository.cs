@@ -36,7 +36,7 @@ namespace ShopApi.Domain.Infra.Repositories
            throw new NotImplementedException();
         }
 
-        public virtual Task<T> GetById(Guid id, string name)
+        public virtual T GetById(Guid id, string name)
         {
             throw new NotImplementedException();
         }

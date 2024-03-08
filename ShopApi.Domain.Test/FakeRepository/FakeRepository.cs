@@ -5,63 +5,27 @@ namespace ShopApi.Domain.Test.FakeRepository;
 
 public class FakeClienteRepository : IClienteRepository
 {
-    private readonly List<Cliente> _clientes;
-
-    public FakeClienteRepository()
-    {
-        // Inicializar uma lista vazia de clientes
-        _clientes = new List<Cliente>();
-    }
-    public Task Adicionar(Cliente entity)
-    {
-        // Adicionar o cliente à lista
-        _clientes.Add(entity);
-        return Task.CompletedTask;
-    }
-
-    public Task AdicionarLista(IEnumerable<Cliente> entities)
+    public void Create(Cliente entity)
     {
         throw new NotImplementedException();
     }
 
-    public void Atualizar(Cliente entity)
+    public void Delete(Cliente entity)
     {
         throw new NotImplementedException();
     }
 
-    public void AtualizarLista(IEnumerable<Cliente> entities)
+    public Task<IEnumerable<Cliente>> GetAll(string name)
     {
         throw new NotImplementedException();
     }
 
-    public Task Commit()
+    public Cliente GetById(Guid id, string name)
     {
-        throw new NotImplementedException();
+        return new Cliente("Teste", "TEste@gmail.com", "123456789", "123456789", DateTime.Now,new Usuario("teste","teste"), Enums.ETipoAcesso.Cliente);
     }
 
-    public void Dispose()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<Cliente> ObterPorId(Guid id)
-    {
-        // Procurar o cliente na lista pelo ID
-        var cliente = _clientes.Find(c => c.Id == id );
-        return Task.FromResult(cliente);
-    }
-
-    public Task<List<Cliente>> ObterTodos()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Remover(Cliente entity)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void RemoverLista(IEnumerable<Cliente> entities)
+    public void Update(Cliente entity)
     {
         throw new NotImplementedException();
     }

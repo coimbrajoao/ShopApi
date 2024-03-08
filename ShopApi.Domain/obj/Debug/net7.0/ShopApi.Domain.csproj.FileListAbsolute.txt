@@ -10,3 +10,15 @@ C:\Users\coimb\ShopApi\ShopApi.Domain\obj\Debug\net7.0\refint\ShopApi.Domain.dll
 C:\Users\coimb\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.pdb
 C:\Users\coimb\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ref\ShopApi.Domain.dll
 C:\Users\coimb\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.csproj.AssemblyReference.cache
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.deps.json
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\bin\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.csproj.AssemblyReference.cache
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.AssemblyInfoInputs.cache
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.AssemblyInfo.cs
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.dll
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\refint\ShopApi.Domain.dll
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ShopApi.Domain.pdb
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi\ShopApi.Domain\obj\Debug\net7.0\ref\ShopApi.Domain.dll

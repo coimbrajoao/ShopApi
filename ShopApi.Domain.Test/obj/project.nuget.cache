@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XkOG4Lnnxl8qWiVD5tYKi9hvBfV2cIQ3gxHVRUgfH5TOGN1STgHKh7vV2t5CqK3rSHjkawOeiZx9HuU4wrD3lg==",
+  "dgSpecHash": "qMHWw3BfaIryYXsfeKpLMB30QhghpkZKAvpHsxTKfrVRLyNjyr9GsNSNOoc8VTMgzEmW1vsqQ48Wzu8rq/KzNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coimb\\ShopApi\\ShopApi.Domain.Test\\ShopApi.Domain.Test.csproj",
+  "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain.Test\\ShopApi.Domain.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coimb\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",

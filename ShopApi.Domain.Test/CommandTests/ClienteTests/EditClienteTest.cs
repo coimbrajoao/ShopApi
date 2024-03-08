@@ -1,42 +1,52 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShopApi.Domain.Commands.ClienteCommand;
-using ShopApi.Domain.Entities;
-using ShopApi.Domain.Test.FakeRepository;
-using System;
 
 namespace ShopApi.Domain.Test.CommandTests.ClienteTests
 {
     [TestClass]
     public class EditClienteTest
     {
-        private readonly ClienteEditCommand _invalidCommand;
-        private readonly ClienteEditCommand _validCommand;
-
-
-        public EditClienteTest()
+        [TestMethod]
+        public void Valid_command_should_edit_client()
         {
-            // Configurar cenário de teste com um comando inválido
-            _invalidCommand = new ClienteEditCommand(Guid.NewGuid(), "", "", "", "", DateTime.Now, "invalid_login", "senha_invalida");
+            var customerName = "Cliente Editado";
+            var email = "editado@gmail.com";
+            var phone = "987654321";
+            
 
-            // Configurar cenário de teste com um comando válido
-            _validCommand = new ClienteEditCommand(Guid.NewGuid(), "Cliente Válido", "cliente_valido@gmail.com", "999999999", "98765432109", DateTime.Now, "valid_login", "senha_valida");
+            var clientId = Guid.NewGuid();
+            var userpassword = "123456";
+            var userlogin = "editado";
+
+            var command = new ClienteEditCommand(clientId, customerName, email, phone, userlogin, userpassword);
+
+            command.Validate();
+
+            Assert.IsTrue(command.IsValid);
 
         }
 
         [TestMethod]
-        public void ComandoInvalidoNaoEditaCliente()
+        public void Invalid_command_should_not_edit_client()
         {
-            _invalidCommand.Validate();
-            // Assert: Verificar se o cliente não foi editado
-            Assert.AreEqual(_invalidCommand.IsValid, false);
-        }
+            var customerName = "aa";
+            var email = "aaa";
+            var phone = "aa";
+            var clientId = Guid.NewGuid();
+            var userPassword = "aa";
+            var userLogin = "aa";
 
-        [TestMethod]
-        public void ComandoValidoEditaCliente()
-        {
-            _validCommand.Validate();
-            // Assert: Verificar se o cliente foi editado
-            Assert.AreEqual(_validCommand.IsValid, true);
+            var command = new ClienteEditCommand(
+                clientId,
+                customerName,
+                email,
+                phone,
+                userLogin,
+                userPassword);
+
+            command.Validate();
+
+            Assert.IsFalse(command.IsValid);
         }
     }
 }

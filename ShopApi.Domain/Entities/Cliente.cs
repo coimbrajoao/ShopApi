@@ -8,7 +8,8 @@ namespace ShopApi.Domain.Entities
         public Cliente()
         {
         }
-        public Cliente(string nome, string email, string telefone, string cPF, DateTime dataNascimento, Usuario usuario) 
+        public Cliente(string nome, string email, string telefone, string cPF, DateTime dataNascimento, Usuario usuario,
+        ETipoAcesso TipoAcesso) 
         {
             Nome = nome;
             Email = email;
@@ -16,8 +17,7 @@ namespace ShopApi.Domain.Entities
             CPF = cPF;
             DataNascimento = dataNascimento;
             Usuario = usuario;
-            ETipoAcesso tipoAcesso = ETipoAcesso.Cliente;
-               
+            ETipoAcesso = TipoAcesso;               
         }
 
         public string Nome { get; set; }
@@ -27,14 +27,14 @@ namespace ShopApi.Domain.Entities
         public DateTime DataNascimento { get; set; }
         public Usuario Usuario { get; set; }
 
-        public ETipoAcesso TipoAcesso { get; set; } = ETipoAcesso.Cliente;
-        public void EditarCliente(string nome, string email, string telefone, string cPF, DateTime dataNascimento)
+        public ETipoAcesso ETipoAcesso { get; set; }
+        public void EditarCliente(string nome, string email, string telefone)
         {
+            
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            CPF = cPF;
-            DataNascimento = dataNascimento;
+            
         }
 
     }

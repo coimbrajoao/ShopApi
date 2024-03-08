@@ -1,16 +1,16 @@
+using Flunt.Validations;
 using ShopApi.Domain.Commands.Contracts;
 using ShopApi.Domain.Entities;
-using ShopApi.Domain.Validacoes;
+using ShopApi.Domain.Enums;
 
 namespace ShopApi.Domain.Commands.ClienteCommand
 {
     public class ClienteCreateCommand : ICommand
     {
-        public ClienteCreateCommand()
-        {
-        }
+        public ClienteCreateCommand() { }
+
         public ClienteCreateCommand(string nome, string email, string telefone,
-         string cPF, DateTime dataNascimento, string login, string senha)
+         string cPF, DateTime dataNascimento, string login, string senha, ETipoAcesso tipoAcesso)
         {
             Nome = nome;
             Email = email;
@@ -19,6 +19,7 @@ namespace ShopApi.Domain.Commands.ClienteCommand
             DataNascimento = dataNascimento;
             Login = login;
             Senha = senha;
+            eTipoAcesso = tipoAcesso;
         }
 
         public string Nome { get; set; }
@@ -30,10 +31,15 @@ namespace ShopApi.Domain.Commands.ClienteCommand
         public string Login { get; set; }
         public string Senha { get; set; }
         public Usuario Usuario { get; set; }
+        public ETipoAcesso eTipoAcesso { get; set; } = ETipoAcesso.Cliente;
         public override void Validate()
         {
-            AddNotifications(ClienteValidacao.Validacao(Nome, Telefone, CPF, Email));
+            AddNotifications(new Contract<Cliente>()
+                        .Requires()
+                        .IsEmail(Email, "Email", "Por favor, insira um email válido")
+                        .IsNotNullOrEmpty(Nome, "Nome", "Por favor, insira um nome válido")
+                        .IsLowerThan(DataNascimento, DateTime.Now, "DataNascimento", "A data de nascimento deve ser menor que a data atual")
+         );
         }
-
     }
 }
