@@ -3,11 +3,11 @@ using ShopApi.Domain.Repositories;
 
 namespace ShopApi.Domain.Test.FakeRepository;
 
-public class FakeClienteRepository : IClienteRepository
+public class FakeClienteRepository : IBaseRepository<Cliente>
 {
     public void Create(Cliente entity)
     {
-        throw new NotImplementedException();
+        
     }
 
     public void Delete(Cliente entity)
