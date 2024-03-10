@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using ShopApi.Domain.Entities;
 using ShopApi.Domain.Infra.Context;
+using ShopApi.Domain.Repositories;
 
 namespace ShopApi.Domain.Infra.Repositories
 {
-    public class ClienteRepository : BaseRepository<Cliente>
+    public class ClienteRepository : BaseRepository<Cliente>, IClienteRepository
     {
         private readonly DataContext _context;
 
