@@ -15,7 +15,8 @@ namespace ShopApi.Domain.Infra.Repositories
         
         public void Create(Usuario entity)
         {
-            throw new NotImplementedException();
+            _context.Add(entity);
+            _context.SaveChanges();
         }
 
         public void Delete(Usuario entity)

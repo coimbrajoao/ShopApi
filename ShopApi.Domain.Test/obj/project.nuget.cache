@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nukayOB+ht7+9Yg1ZVkXF/S9RNRUFZ0QFcoC/QCCwP0fyuSzYyE8E4OAecW1nCGWrDaiZAQh4Xe9TDmg5qU9tA==",
+  "dgSpecHash": "dlbaO2PMtyTtLALExcRxWb+rYUJ9CSCziUB7HQZAq+DxrP02pz6bHVdnQm0PkSzAQbtId7++eM1S332sx7cSBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain.Test\\ShopApi.Domain.Test.csproj",
+  "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Test\\ShopApi.Domain.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coimb\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

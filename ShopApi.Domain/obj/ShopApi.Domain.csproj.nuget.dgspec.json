@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {}
+    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
+    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
         "projectName": "ShopApi.Domain",
-        "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+        "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
         "packagesPath": "C:\\Users\\coimb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi\\ShopApi.Domain\\obj\\",
+        "outputPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
