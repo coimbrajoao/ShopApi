@@ -317,3 +317,4 @@ C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Test\obj\Debug\net7.0\
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Test\obj\Debug\net7.0\ShopApi.Domain.Test.pdb
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Test\obj\Debug\net7.0\ShopApi.Domain.Test.genruntimeconfig.cache
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Test\obj\Debug\net7.0\ref\ShopApi.Domain.Test.dll
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Test\bin\Debug\net7.0\SecureIdentity.dll

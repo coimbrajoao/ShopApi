@@ -1,4 +1,5 @@
 using Flunt.Notifications;
+using SecureIdentity.Password;
 using ShopApi.Domain.Commands.ClienteCommand;
 using ShopApi.Domain.Commands.Contracts;
 using ShopApi.Domain.Entities;
@@ -27,8 +28,17 @@ namespace ShopApi.Domain.Handlers
             {
                 return new GenericCommandResult(false, "Invalid request", command.Notifications);
             }
+
+            if (_repository.Exists(c => c.CPF == command.CPF))
+            {
+                command.AddNotification("CPF", "CPF já cadastrado");
+                return new GenericCommandResult(false, "CPF already exists", command.Notifications);
+            }
+
+
             var eTipoAcesso = ETipoAcesso.Cliente;
-            var client = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento, new Usuario(command.Login, command.Senha), eTipoAcesso);
+            var client = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento,
+            new Usuario(command.Login, command.Senha = PasswordHasher.Hash(command.Senha)), eTipoAcesso);
 
             _usuarioRepository.Create(client.Usuario);
             _repository.Create(client);

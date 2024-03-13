@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using ShopApi.Domain.Entities;
 using ShopApi.Domain.Repositories;
 
@@ -11,6 +12,11 @@ public class FakeClienteRepository : IBaseRepository<Cliente>
     }
 
     public void Delete(Cliente entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool Exists(Expression<Func<Cliente, bool>> predicate)
     {
         throw new NotImplementedException();
     }

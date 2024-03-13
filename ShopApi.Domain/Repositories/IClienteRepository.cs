@@ -4,6 +4,5 @@ namespace ShopApi.Domain.Repositories
 {
     public interface IClienteRepository : IBaseRepository<Cliente>
     {
-         
     }
 }

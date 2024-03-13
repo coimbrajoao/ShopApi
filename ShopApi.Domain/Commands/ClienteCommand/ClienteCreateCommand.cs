@@ -39,6 +39,8 @@ namespace ShopApi.Domain.Commands.ClienteCommand
                         .IsEmail(Email, "Email", "Por favor, insira um email válido")
                         .IsNotNullOrEmpty(Nome, "Nome", "Por favor, insira um nome válido")
                         .IsLowerThan(DataNascimento, DateTime.Now, "DataNascimento", "A data de nascimento deve ser menor que a data atual")
+                        .IsTrue(CPF.Length == 11, "CPF", "Por favor, insira um CPF válido")
+                        
          );
         }
     }

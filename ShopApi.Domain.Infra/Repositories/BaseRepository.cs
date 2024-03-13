@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using ShopApi.Domain.Entities;
 using ShopApi.Domain.Infra.Context;
@@ -41,5 +42,9 @@ namespace ShopApi.Domain.Infra.Repositories
             throw new NotImplementedException();
         }
 
+        public virtual bool Exists(Expression<Func<T, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

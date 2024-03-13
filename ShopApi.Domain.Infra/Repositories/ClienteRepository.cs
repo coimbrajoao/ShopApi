@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using ShopApi.Domain.Entities;
 using ShopApi.Domain.Infra.Context;
@@ -23,5 +24,11 @@ namespace ShopApi.Domain.Infra.Repositories
         {
             return _context.Clientes.FirstOrDefault(x => x.Id == id);
         }
+
+        public override bool Exists(Expression<Func<Cliente, bool>> predicate)
+        {
+            return _context.Clientes.Any(predicate);
+        }
+        
     }
 }

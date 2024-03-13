@@ -4,40 +4,14 @@ using ShopApi.Domain.Repositories;
 
 namespace ShopApi.Domain.Infra.Repositories
 {
-    public class UsuarioRepository : IBaseRepository<Usuario>, IUsuario
+    public class UsuarioRepository : BaseRepository<Usuario>, IUsuario
     {
         private readonly DataContext _context;
 
-        public UsuarioRepository(DataContext context)
+        public UsuarioRepository(DataContext context) : base(context)
         {
             _context = context;
         }
-        
-        public void Create(Usuario entity)
-        {
-            _context.Add(entity);
-            _context.SaveChanges();
-        }
-
-        public void Delete(Usuario entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Usuario>> GetAll(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Usuario GetById(Guid id, string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Usuario entity)
-        {
-            throw new NotImplementedException();
-        }
-
+         
     }
 }

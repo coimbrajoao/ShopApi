@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vCl6vB93cjODyR2VVBoUHW/o1I8j00RXvMMfU5bxx0AuignuEof5wR/E0gfP3nfJvxNLb0gRuOwQ+JDh6Jq8Vg==",
+  "dgSpecHash": "hUNOjFhGcndQIe35Av7E4+25q8CB3yBRxeVkhNl2AZzUfGVpe05eoIXW9kMnsFz4O4BwO7MzhDRYbcUFQr+NoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
+  "projectFilePath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coimb\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -46,6 +46,7 @@
     "C:\\Users\\coimb\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\coimb\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

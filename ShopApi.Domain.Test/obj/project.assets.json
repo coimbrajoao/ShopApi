@@ -416,6 +416,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "SecureIdentity/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SecureIdentity.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -670,7 +679,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Flunt": "2.0.5"
+          "Flunt": "2.0.5",
+          "SecureIdentity": "1.0.4"
         },
         "compile": {
           "bin/placeholder/ShopApi.Domain.dll": {}
@@ -1469,6 +1479,18 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "SecureIdentity/1.0.4": {
+      "sha512": "/s0TMYeHuLXFh2nI337IFGL2E3FJU+o20W4e52muxbWl5BPefUlmEPBTwWuCq3NczwWhbes5GDC6kDWYBrhLaQ==",
+      "type": "package",
+      "path": "secureidentity/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/SecureIdentity.dll",
+        "secureidentity.1.0.4.nupkg.sha512",
+        "secureidentity.nuspec"
       ]
     },
     "System.Collections/4.3.0": {

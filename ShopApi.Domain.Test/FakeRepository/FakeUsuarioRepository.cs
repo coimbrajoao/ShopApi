@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using ShopApi.Domain.Entities;
 using ShopApi.Domain.Repositories;
 
@@ -11,6 +12,11 @@ namespace ShopApi.Domain.Test.FakeRepository
         }
 
         public void Delete(Usuario entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Exists(Expression<Func<Usuario, bool>> predicate)
         {
             throw new NotImplementedException();
         }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WGdHmWDZtjJBif0yEQxOki5H4qIZqdaoKarOm+fTvOiGDKv9gJ9+IcP3e2OkMq84iaoDBVTuGXSGqlkhRU+7xw==",
+  "dgSpecHash": "2KzyPdaggm+yBxs4u4/MXJRUMo4t3YLy+7BtvXdyJ6dzW9QeWqqKvD2VESIQO1+x4IN4nZox+uIFlKJqV6lT2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+  "projectFilePath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\coimb\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+    "C:\\Users\\coimb\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\coimb\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512"
   ],
   "logs": []
 }

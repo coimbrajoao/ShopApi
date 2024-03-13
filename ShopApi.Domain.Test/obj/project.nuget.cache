@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dlbaO2PMtyTtLALExcRxWb+rYUJ9CSCziUB7HQZAq+DxrP02pz6bHVdnQm0PkSzAQbtId7++eM1S332sx7cSBg==",
+  "dgSpecHash": "iXAYdV+UCyRUwcMZDyipb5N0WrdGGlU7c4nGikXqsl3yoTpWWG2DaVibBV0WV6R73RX8puF0+WNKr6McyZDPWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Test\\ShopApi.Domain.Test.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\coimb\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\coimb\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",

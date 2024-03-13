@@ -134,6 +134,10 @@
             "Flunt": {
               "target": "Package",
               "version": "[2.0.5, )"
+            },
+            "SecureIdentity": {
+              "target": "Package",
+              "version": "[1.0.4, )"
             }
           },
           "imports": [

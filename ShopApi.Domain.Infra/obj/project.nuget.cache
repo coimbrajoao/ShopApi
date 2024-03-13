@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Xp3llsxBkWmFuygWnvpE/FRwlbOWUGFORub46nnAkAE8ZClqVQ76pr8uFcDMZ+oo205hrLS50MRdT2ukZsSzDw==",
+  "dgSpecHash": "ud2TpR6PhdvqsmRIA79SCZD7M7DF2QJtjJw+cFPbzrq3JSF22vkSyR6XxTHeph5Yl7AKKy6bvNAfl8LvEXgELg==",
   "success": true,
   "projectFilePath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Infra\\ShopApi.Domain.Infra.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\coimb\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\coimb\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\coimb\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
