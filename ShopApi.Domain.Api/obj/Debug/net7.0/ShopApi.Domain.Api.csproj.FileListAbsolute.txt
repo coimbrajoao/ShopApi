@@ -232,3 +232,4 @@ C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Api\bin\Debug\net7.0\M
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Api\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Api\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Api\bin\Debug\net7.0\SecureIdentity.dll
+C:\Users\coimb\OneDrive\Documentos\ShopApi\ShopApi.Domain.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

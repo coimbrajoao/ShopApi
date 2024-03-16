@@ -5,14 +5,7 @@ namespace ShopApi.Domain.Entities
     public class Usuario : Entity
     {
         private readonly List<ETipoAcesso> _acessos;
-
-        private Usuario( string login, string senha, bool verificado)
-        {
-           
-            Login = login;
-            Senha = senha;
-            Verificado = verificado;
-        }
+        public Usuario(){}
 
         public Usuario(string login, string senha)
         {
@@ -25,6 +18,7 @@ namespace ShopApi.Domain.Entities
         public string Senha { get; private set; }
         public bool Verificado { get; private set; }
         public ETipoAcesso Acessos { get; set; }
+        public Cliente Cliente { get; set; }
         public void VerificarUsuario(string senha)
         {
             Senha = senha;

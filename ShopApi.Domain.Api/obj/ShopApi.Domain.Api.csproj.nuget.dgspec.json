@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj": {}
+    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj": {
+    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
+        "projectUniqueName": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
         "projectName": "ShopApi.Domain.Api",
-        "projectPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
+        "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\ShopApi.Domain.Api.csproj",
         "packagesPath": "C:\\Users\\coimb\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\obj\\",
+        "outputPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -36,8 +36,8 @@
               "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Infra\\ShopApi.Domain.Infra.csproj": {
                 "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain.Infra\\ShopApi.Domain.Infra.csproj"
               },
-              "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
-                "projectPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj"
+              "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj"
               }
             }
           }
@@ -133,8 +133,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
-                "projectPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj"
+              "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
+    "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
         "projectName": "ShopApi.Domain",
-        "projectPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
+        "projectPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\ShopApi.Domain.csproj",
         "packagesPath": "C:\\Users\\coimb\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\obj\\",
+        "outputPath": "C:\\Users\\coimb\\OneDrive\\Documentos\\ShopApi\\ShopApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -238,6 +238,14 @@
             "Flunt": {
               "target": "Package",
               "version": "[2.0.5, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "SecureIdentity": {
               "target": "Package",

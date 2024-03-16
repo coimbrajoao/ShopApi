@@ -4,11 +4,10 @@ namespace ShopApi.Domain.Entities
 {
     public class Cliente : Entity
     {
-     
         public Cliente()
         {
         }
-        public Cliente(string nome, string email, string telefone, string cPF, DateTime dataNascimento, Usuario usuario,
+        public Cliente(string nome, string email, string telefone, string cPF, DateTime dataNascimento,
         ETipoAcesso TipoAcesso) 
         {
             Nome = nome;
@@ -16,7 +15,6 @@ namespace ShopApi.Domain.Entities
             Telefone = telefone;
             CPF = cPF;
             DataNascimento = dataNascimento;
-            Usuario = usuario;
             ETipoAcesso = TipoAcesso;               
         }
 
@@ -25,16 +23,13 @@ namespace ShopApi.Domain.Entities
         public string Telefone { get; set; }
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }
-        public Usuario Usuario { get; set; }
-
+        
         public ETipoAcesso ETipoAcesso { get; set; }
         public void EditarCliente(string nome, string email, string telefone)
         {
-            
             Nome = nome;
             Email = email;
             Telefone = telefone;
-            
         }
 
     }

@@ -18,7 +18,7 @@ namespace ShopApi.Domain.Handlers
         public ClienteHandler(IClienteRepository repository, IUsuario usuarioRepository)
         {
             _repository = repository;
-            _usuarioRepository = usuarioRepository;
+             _usuarioRepository = usuarioRepository;
 
         }
         public ICommandResult Handle(ClienteCreateCommand command)
@@ -35,13 +35,15 @@ namespace ShopApi.Domain.Handlers
                 return new GenericCommandResult(false, "CPF already exists", command.Notifications);
             }
 
-
+            string Hashshed = PasswordHasher.Hash(command.Senha);
+            
             var eTipoAcesso = ETipoAcesso.Cliente;
-            var client = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento,
-            new Usuario(command.Login, command.Senha = PasswordHasher.Hash(command.Senha)), eTipoAcesso);
-
-            _usuarioRepository.Create(client.Usuario);
+            var client = new Cliente(command.Nome, command.Email, command.Telefone, command.CPF, command.DataNascimento, eTipoAcesso);
             _repository.Create(client);
+
+            var Usuario = new Usuario(command.Login, Hashshed);
+            Usuario.Cliente = client;// Adicionar o cliente ao usuario
+            _usuarioRepository.Create(Usuario);
 
             return new GenericCommandResult(true, "Client created", command);
         }

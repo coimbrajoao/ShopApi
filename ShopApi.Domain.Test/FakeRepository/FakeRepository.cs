@@ -28,7 +28,7 @@ public class FakeClienteRepository : IBaseRepository<Cliente>
 
     public Cliente GetById(Guid id, string name)
     {
-        return new Cliente("Teste", "TEste@gmail.com", "123456789", "123456789", DateTime.Now,new Usuario("teste","teste"), Enums.ETipoAcesso.Cliente);
+        return new Cliente("Teste", "TEste@gmail.com", "123456789", "123456789", DateTime.Now, Enums.ETipoAcesso.Cliente);
     }
 
     public void Update(Cliente entity)

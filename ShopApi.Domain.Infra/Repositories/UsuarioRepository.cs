@@ -12,6 +12,11 @@ namespace ShopApi.Domain.Infra.Repositories
         {
             _context = context;
         }
+
+        public Usuario GetbyLogin(string login)
+        {
+            return _context.Usuarios.FirstOrDefault(x => x.Login == login);
+        }
          
     }
 }

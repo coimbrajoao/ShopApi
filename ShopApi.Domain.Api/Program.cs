@@ -1,8 +1,12 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ShopApi.Domain.Handlers;
 using ShopApi.Domain.Infra.Context;
 using ShopApi.Domain.Infra.Repositories;
 using ShopApi.Domain.Repositories;
+using ShopApi.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +22,27 @@ builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Confi
 
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IUsuario, UsuarioRepository>();
-
+builder.Services.AddScoped<TokenService>();
 builder.Services.AddTransient<ClienteHandler, ClienteHandler>();
+builder.Services.AddTransient<LoginHandler, LoginHandler>();
+
+var key = Encoding.ASCII.GetBytes("sdasdawdqwfjiadasdasdqwdqsxqwd232543123cnouasdbqw");
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;//autenticação
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;//desafio
+}).AddJwtBearer(x =>
+{
+
+    x.TokenValidationParameters = new TokenValidationParameters//validando o token
+    {
+        ValidateIssuerSigningKey = true,//validando a chave
+        IssuerSigningKey = new SymmetricSecurityKey(key),//chave de segurança
+        ValidateIssuer = false,//validando o emissor
+        ValidateAudience = false//validando o publico
+    };
+});
+
 
 var app = builder.Build();
 

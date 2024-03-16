@@ -50,12 +50,7 @@ namespace ShopApi.Domain.Infra.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UsuarioId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Clientes");
                 });
@@ -68,6 +63,9 @@ namespace ShopApi.Domain.Infra.Migrations
 
                     b.Property<int>("Acessos")
                         .HasColumnType("int");
+
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Login")
                         .IsRequired()
@@ -82,18 +80,21 @@ namespace ShopApi.Domain.Infra.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ClienteId")
+                        .IsUnique();
+
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("ShopApi.Domain.Entities.Cliente", b =>
+            modelBuilder.Entity("ShopApi.Domain.Entities.Usuario", b =>
                 {
-                    b.HasOne("ShopApi.Domain.Entities.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
+                    b.HasOne("ShopApi.Domain.Entities.Cliente", "Cliente")
+                        .WithOne()
+                        .HasForeignKey("ShopApi.Domain.Entities.Usuario", "ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Usuario");
+                    b.Navigation("Cliente");
                 });
 #pragma warning restore 612, 618
         }
